@@ -10,7 +10,6 @@ import android.widget.ImageView;
 
 import com.astuetz.PagerSlidingTabStrip;
 import com.cpoopc.scrollablelayoutlib.ScrollableLayout;
-import com.nineoldandroids.view.ViewHelper;
 import com.test.cp.myscrolllayout.R;
 import com.test.cp.myscrolllayout.fragment.base.BasePagerFragment;
 
@@ -30,7 +29,7 @@ public class ParallaxImageHeaderFragment extends BasePagerFragment {
         mScrollLayout.setOnScrollListener(new ScrollableLayout.OnScrollListener() {
             @Override
             public void onScroll(int currentY, int maxY) {
-                ViewHelper.setTranslationY(imageHeader, (float) (currentY * 0.5));
+//                ViewHelper.setTranslationY(imageHeader, (float) (currentY * 0.5));
             }
         });
         // 扩展点击头部滑动范围

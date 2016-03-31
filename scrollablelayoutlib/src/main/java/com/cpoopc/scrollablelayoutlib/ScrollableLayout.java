@@ -28,12 +28,10 @@ import android.content.Context;
 import android.os.Build;
 import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
-import android.view.ViewTreeObserver;
 import android.widget.LinearLayout;
 import android.widget.Scroller;
 
@@ -296,7 +294,8 @@ public class ScrollableLayout extends LinearLayout {
         int toY = scrollY + y;
         if (toY >= maxY) {
             toY = maxY;
-        } else if (toY <= minY) {
+        } else
+        if (toY <= minY) {
             toY = minY;
         }
         y = toY - scrollY;

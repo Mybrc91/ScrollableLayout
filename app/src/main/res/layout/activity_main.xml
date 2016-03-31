@@ -13,12 +13,12 @@
             android:layout_height="wrap_content">
             <Button
                 android:onClick="showPagerHeaderFragment"
-                android:text="PagerHeaderFragment"
+                android:text="Pager-Header-Fragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
                 android:onClick="showParallaxFragment"
-                android:text="ParallaxFragment"
+                android:text="Parallax-Fragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
